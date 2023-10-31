@@ -12,7 +12,7 @@ export const Loading = ({ isLoading = false }) => {
 }
 
 const Background = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
 
   display: flex;
@@ -25,8 +25,8 @@ const Background = styled.div`
   background-position: 10% 10%;
   background-size: auto 100%;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   opacity: ${(props) => (props.isLoading ? 1 : 0)};
 

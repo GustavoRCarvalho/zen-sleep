@@ -4,7 +4,7 @@ import { Card } from "./Card"
 
 export const Home = () => {
   return (
-    <Grid container gap={"1em"} justifyContent={"center"}>
+    <Grid container gap={"1em"} justifyContent={"center"} marginTop={"1em"}>
       {StoriesCardsList.map(({ title, time, image }) => (
         <Card key={title} title={title} time={time} image={image} />
       ))}
